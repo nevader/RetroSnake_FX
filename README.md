@@ -21,21 +21,6 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 - **Intuitive UI** with custom graphics and hover effects
 - **Keyboard Controls** for quick navigation and game actions
 
-## 📸 Screenshots
-
-*(Create a `screenshots` folder in your repository and add your game images. Update paths accordingly.)*
-
-<table>
-  <tr>
-    <td><img src="./screenshots/main-menu.png" alt="Main Menu" width="400"/></td>
-    <td><img src="./screenshots/gameplay.png" alt="Gameplay" width="400"/></td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/game-over.png" alt="Game Over" width="400"/></td>
-    <td><img src="./screenshots/high-scores.png" alt="High Scores" width="400"/></td>
-  </tr>
-</table>
-
 ## 🎮 Controls
 
 | Key         | Action             |
@@ -48,7 +33,7 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 
 ### Prerequisites
 
-- Java 21 or higher (as specified in your `pom.xml`)
+- Java 21 or higher
 - Apache Maven
 
 ### Installation & Running
