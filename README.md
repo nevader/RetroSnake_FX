@@ -2,7 +2,7 @@
 
 A modern implementation of the classic Snake game built with JavaFX, featuring a sleek UI, multiple game modes, and persistent high scores.
 
-![Game Demo](screenshots\game_play.gif)
+![Game Demo](game_play.gif)
 
 ## ✨ Features
 
