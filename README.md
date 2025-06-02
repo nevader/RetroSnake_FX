@@ -2,8 +2,7 @@
 
 A modern implementation of the classic Snake game built with JavaFX, featuring a sleek UI, multiple game modes, and persistent high scores.
 
-![Game Demo](.\screenshots\game_play.gif)
-*(You'll need to replace this with your actual GIF path if you create one, e.g., in a `screenshots` folder)*
+![Game Demo](screenshots\game_play.gif)
 
 ## ✨ Features
 
