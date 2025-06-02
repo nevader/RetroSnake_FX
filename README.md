@@ -2,7 +2,7 @@
 
 A modern implementation of the classic Snake game built with JavaFX, featuring a sleek UI, multiple game modes, and persistent high scores.
 
-![Game Demo](./screenshots/gameplay.gif)
+![Game Demo](.\screenshots\gameplay.gif)
 *(You'll need to replace this with your actual GIF path if you create one, e.g., in a `screenshots` folder)*
 
 ## ✨ Features
@@ -55,9 +55,8 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/SnakeFX.git](https://github.com/yourusername/SnakeFX.git)
+    git clone [https://github.com/nevader/RetroSnake_FX](https://github.com/nevader/RetroSnake_FX)
     ```
-    *(Replace `yourusername/SnakeFX.git` with your actual GitHub repository URL)*
 2.  **Navigate to the project directory:**
     ```bash
     cd SnakeFX
@@ -72,7 +71,7 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
     ```bash
     mvn javafx:run
     ```
-    The main class is `pl.s24825.Launcher`.
+    The main class is `pl.nevader.Launcher`.
 
     Alternatively, after building with `mvn clean package` (if your `pom.xml` is configured to build an executable JAR):
     ```bash
@@ -92,12 +91,12 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 A brief overview of the project structure:
 
 
-Snake_FX/
+RetroSnake_FX/
 ├── pom.xml               # Maven Project Object Model
-├── highscore.txt         # Stores high scores (created at runtime in project root)
+├── highscore.txt         # Stores high scores
 └── src/
 └── main/
-├── java/pl/s24825/
+├── java/pl/nevader/
 │   ├── controller/     # Contains controller classes for FXML files
 │   ├── model/          # Contains game logic (Engine.java, Snake.java, Food.java)
 │   ├── view/           # Contains ViewFactory.java and Styles.java enum
@@ -143,10 +142,8 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ## 👨‍💻 Author
 
-- **[Your Name]**
-- GitHub: [@yourusername](https://github.com/yourusername)
-
-*(Replace with your actual name and GitHub profile URL)*
+- **[Krzysztof Przybysz (Nevader)]**
+- GitHub: [@nevader](https://github.com/nevader)
 
 ## 🙏 Acknowledgments
 
