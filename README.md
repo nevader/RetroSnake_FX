@@ -39,11 +39,11 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/nevader/RetroSnake_FX](https://github.com/nevader/RetroSnake_FX)
+    git clone nhttps://github.com/nevader/RetroSnake_FX
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd SnakeFX
+    cd RetroSnake_FX
     ```
 3.  **Build the project:**
     Maven will compile the code and download necessary dependencies.
@@ -70,27 +70,27 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 - **FXML:** For defining UI layouts
 - **CSS:** For styling the UI
 
-## Project Structure
+## 📁 Project Structure
 
 A brief overview of the project structure:
 
 ```text
-RetroSnake_FX/
-├── pom.xml               # Maven Project Object Model [cite: 30]
-├── highscore.txt         # Stores high scores [cite: 30]
-└── src/ [cite: 30]
-    └── main/ [cite: 30]
-        ├── java/pl/nevader/ [cite: 30]
-        │   ├── controller/     # Contains controller classes for FXML files [cite: 30]
-        │   ├── model/          # Contains game logic (Engine.java, Snake.java, Food.java) [cite: 30]
-        │   ├── view/           # Contains ViewFactory.java and Styles.java enum [cite: 30]
-        │   ├── Launcher.java   # Main application entry point [cite: 30]
-        │   └── Settings.java   # Handles game settings (size, speed) [cite: 31]
-        └── resources/ [cite: 31]
-            └── view/ [cite: 31]
-                ├── assets/     # Game graphics (images for snake, food, UI elements) [cite: 31]
-                ├── css/        # CSS stylesheets (Big.css, Medium.css, Small.css) [cite: 31]
-                └── *.fxml      # FXML layout files (MainMenu.fxml, GameWindow.fxml, etc.) [cite: 31]
+📁 RetroSnake_FX/
+├── ⚙️ pom.xml               # Maven Project Object Model 
+├── 📝 highscore.txt         # Stores high scores
+└── 📁 src/
+    └── 📁 main/
+        ├── 📁 java/pl/nevader/
+        │   ├── 📁 controller/     # Contains controller classes for FXML files 
+        │   ├── 📁 model/          # Contains game logic (Engine.java, Snake.java, Food.java) 
+        │   ├── 📁 view/           # Contains ViewFactory.java and Styles.java enum 
+        │   ├── ☕ Launcher.java   # Main application entry point
+        │   └── ☕ Settings.java   # Handles game settings (size, speed)
+        └── 📁 resources/
+            └── 📁 view/
+                ├── 🖼️ assets/     # Game graphics (images for snake, food, UI elements) 
+                ├── 🎨 css/        # CSS stylesheets (Big.css, Medium.css, Small.css) 
+                └── 📄 *.fxml      # FXML layout files (MainMenu.fxml, GameWindow.fxml, etc.) 
 ```
 
 ## 🎯 Game Features Explained
@@ -118,15 +118,9 @@ Default game settings can be modified via the "New Game" screen:
 
 Contributions are welcome! Feel free to fork this project, make improvements, and submit pull requests. If you encounter any bugs or have ideas for new features, please open an issue on GitHub.
 
-## 📝 License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
-
-*(You'll need to create a `LICENSE` file in your repository with the MIT License text if you choose this license.)*
-
 ## 👨‍💻 Author
 
-- **[Krzysztof Przybysz (Nevader)]**
+- **[Krzysztof Przybysz (Nevader)](https://github.com/nevader)**
 - GitHub: [@nevader](https://github.com/nevader)
 
 ## 🙏 Acknowledgments
