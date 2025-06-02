@@ -76,16 +76,16 @@ A brief overview of the project structure:
 
 
 RetroSnake_FX/
-├── pom.xml               # Maven Project Object Model
-├── highscore.txt         # Stores high scores
+├── pom.xml               # Maven Project Object Model [cite: 30]
+├── highscore.txt         # Stores high scores [cite: 30]
 └── src/
 └── main/
 ├── java/pl/nevader/
-│   ├── controller/     # Contains controller classes for FXML files
-│   ├── model/          # Contains game logic (Engine.java, Snake.java, Food.java)
-│   ├── view/           # Contains ViewFactory.java and Styles.java enum
-│   ├── Launcher.java   # Main application entry point
-│   └── Settings.java   # Handles game settings (size, speed)
+│   ├── controller/     # Contains controller classes for FXML files [cite: 30]
+│   ├── model/          # Contains game logic (Engine.java, Snake.java, Food.java) [cite: 30]
+│   ├── view/           # Contains ViewFactory.java and Styles.java enum [cite: 30]
+│   ├── Launcher.java   # Main application entry point [cite: 30]
+│   └── Settings.java   # Handles game settings (size, speed) [cite: 31]
 └── resources/
 └── view/
 ├── assets/     # Game graphics (images for snake, food, UI elements)
