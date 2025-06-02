@@ -1,0 +1,13 @@
+#main{
+    -fx-background-image: url("../assets/StartScreen.png");
+    -fx-background-size: stretch;
+    -fx-pref-width: 2000;
+    -fx-pref-height: 2000;
+}
+
+#gameWindow{
+    -fx-pref-width: 2000;
+    -fx-pref-height: 2000;
+}
+
+

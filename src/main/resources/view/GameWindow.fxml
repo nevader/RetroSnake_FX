@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="gameWindow" onKeyPressed="#onKeyPressed" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Canvas id="gameSpace" fx:id="canvas" height="800.0" width="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Text fx:id="timeLabel" fontSmoothingType="LCD" layoutX="55.0" layoutY="58.740234375" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.13671875" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Text>
+      <Text fx:id="scoreLabel" fontSmoothingType="LCD" layoutX="692.0" layoutY="57.357421875" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="65.0" AnchorPane.topAnchor="38.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="timeImg" fitHeight="30.0" fitWidth="100.0" layoutX="177.0" layoutY="64.0" opacity="0.8" pickOnBounds="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@assets/time.png" />
+         </image></ImageView>
+      <ImageView fx:id="scoreImg" fitHeight="30.0" fitWidth="100.0" layoutX="494.0" layoutY="27.0" opacity="0.8" pickOnBounds="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@assets/score.png" />
+         </image></ImageView>
+      <ImageView fx:id="loseScreen" fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@assets/loseScreen2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitBtn" fitHeight="50.0" fitWidth="100.0" layoutX="14.0" layoutY="745.0" onMouseEntered="#exitOnHover" onMouseExited="#exitOnNotHover" onMousePressed="#exitOnPressed" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@assets/exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="submitBtn" fitHeight="50.0" fitWidth="150.0" layoutX="641.0" layoutY="749.0" onMouseEntered="#submitOnHover" onMouseExited="#sbmitOnNotHover" onMousePressed="#subOnPressed" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@assets/submit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="finalScoreImg" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@assets/score.png" />
+         </image>
+      </ImageView>
+      <TextField id="text" fx:id="finalScoreLabel" alignment="CENTER" editable="false" layoutX="325.0" layoutY="400.0" prefHeight="50.0" prefWidth="150.0" visible="false">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="nameImg" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@assets/name.png" />
+         </image>
+      </ImageView>
+      <TextField id="text" fx:id="nameField" alignment="CENTER" layoutX="276.0" layoutY="565.0" prefHeight="50.0" prefWidth="248.0" visible="false">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

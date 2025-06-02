@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="newGame" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="text" fx:id="sizeField" alignment="CENTER" layoutX="119.0" layoutY="400.0" prefHeight="30.0" prefWidth="130.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField id="text" fx:id="speedField" alignment="CENTER" layoutX="119.0" layoutY="549.0" prefHeight="30.0" prefWidth="130.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <ImageView fitHeight="50.0" fitWidth="228.0" layoutX="70.0" layoutY="350.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/map-size.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="313.0" layoutX="27.0" layoutY="498.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/snake-speed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="114.0" layoutX="662.0" layoutY="729.0" onMouseClicked="#playOnClicked" onMouseEntered="#playOnHover" onMouseExited="#playOnNotHover" pickOnBounds="true">
+         <image>
+            <Image url="@assets/play.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="114.0" layoutX="34.0" layoutY="729.0" onMouseClicked="#backOnClicked" onMouseEntered="#BackOnHover" onMouseExited="#BackOnNotHover" pickOnBounds="true">
+         <image>
+            <Image url="@assets/back.png" />
+         </image>
+      </ImageView>
+      <Label id="error" fx:id="errorLabelSize" layoutX="105.0" layoutY="444.0" prefHeight="36.0" prefWidth="268.0" textAlignment="CENTER" textFill="#f83838" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label id="error" fx:id="errorLabelSpeed" layoutX="86.0" layoutY="594.0" prefHeight="36.0" prefWidth="268.0" textAlignment="CENTER" textFill="#f83838" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField id="text" fx:id="speedField1" alignment="CENTER" editable="false" layoutX="18.0" layoutY="14.0" prefHeight="302.0" prefWidth="332.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="88.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_arrow_right.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="57.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_arrow_up.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="26.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_arrow_left.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="57.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_arrow_down.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="250.0" layoutX="71.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/controls.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="141.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/movement.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="60.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_r.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="200.0" layoutX="139.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/restart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="85.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_r.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="35.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/kb_shift.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="213.0" layoutX="133.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/main-menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

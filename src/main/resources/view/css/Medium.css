@@ -1,0 +1,64 @@
+#main{
+    -fx-background-image: url("../assets/StartScreen.png");
+    -fx-background-size: stretch;
+    -fx-pref-width: 800;
+    -fx-pref-height: 800;
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+
+#newGame{
+    -fx-background-image: url("../assets/StartScreen.png");
+    -fx-background-size: stretch;
+    -fx-pref-width: 800;
+    -fx-pref-height: 800;
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+
+
+#gameWindow {
+    -fx-background-image: url("../assets/background2.png");
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+
+#text {
+    -fx-text-fill: #a9a9a9;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+    -fx-background-color: rgba(0, 0, 0, 0.62);
+}
+
+#highscores {
+    -fx-background-image: url("../assets/StartScreen.png");
+    -fx-background-size: stretch;
+    -fx-pref-width: 800;
+    -fx-pref-height: 800;
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 1;
+    -fx-opacity: 0;
+}
+.text-area {
+    -fx-text-fill: #a9a9a9;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+    -fx-background-color: rgba(0, 0, 0, 0.62);
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}

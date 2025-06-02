@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="highscores" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="backBtn" fitHeight="50.0" fitWidth="100.0" layoutX="14.0" layoutY="751.0" onMouseEntered="#backOnHover" onMouseExited="#backNotHover" onMousePressed="#backClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="829.0" layoutX="198.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/high-scores.png" />
+         </image>
+      </ImageView>
+      <TextField id="text" fx:id="speedField1" alignment="CENTER" editable="false" layoutX="136.0" layoutY="228.0" prefHeight="453.0" prefWidth="535.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <ImageView fitHeight="35.0" fitWidth="146.0" layoutX="523.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/score.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="136.0" layoutX="159.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/name.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="highscoreTableName" editable="false" layoutX="136.0" layoutY="246.0" prefHeight="434.0" prefWidth="308.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></TextArea>
+      <TextArea fx:id="highscoreTableScore" editable="false" layoutX="479.0" layoutY="246.0" prefHeight="434.0" prefWidth="192.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>
