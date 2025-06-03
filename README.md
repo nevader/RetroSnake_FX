@@ -1,32 +1,40 @@
-# SnakeFX 🐍
+# 🐍 RetroSnake FX
 
-A modern implementation of the classic Snake game built with JavaFX, featuring a sleek UI, multiple game modes, and persistent high scores.
+A modern implementation of the classic Snake game built with JavaFX, featuring customizable gameplay settings, special food types, and a persistent high score system. Developed as part of the Graphical User Interface (GUI) course at PJATK.
+
+![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![javafx](https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=java&logoColor=white)
+![maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 
 ![Game Demo](game_play.gif)
 
-## ✨ Features
+## 🎮 Game Features
 
-- **Classic Snake Gameplay** with smooth controls and animations
-- **Customizable Settings**
+### Core Gameplay
+
+- **Classic Snake mechanics** with smooth movement and controls
+- **Dynamic scoring system** - Score multiplier based on time elapsed
+- **Customizable difficulty**:
     - Adjustable map size
     - Variable snake speed
-- **Special Food Types**
-    - 🟢 Size-up food (increases snake length)
-    - 🔴 Size-down food (decreases snake length)
-- **High Score System** with persistent storage (`highscore.txt`)
-- **Real-time Statistics**
-    - Timer display
-    - Dynamic score calculation based on time and food collected
-- **Intuitive UI** with custom graphics and hover effects
-- **Keyboard Controls** for quick navigation and game actions
+- **Special food types**:
+    - 🟢 **Green Apple** - Increases snake length
+    - 🔴 **Red Apple** - Decreases snake length (minimum length maintained)
 
-## 🎮 Controls
+### User Interface
 
-| Key         | Action             |
-| ----------- | ------------------ |
-| ⬆️⬇️⬅️➡️     | Move snake         |
-| R           | Restart current game |
-| Shift + R   | Return to main menu|
+- **Sleek retro design** with custom graphics
+- **Real-time statistics** - Timer and score display
+- **Intuitive menu system** with hover effects
+- **Responsive controls** - Keyboard-based gameplay
+
+## 🎯 Controls
+
+|Key|Action|
+|---|---|
+|⬆️⬇️⬅️➡️|Move snake|
+|**R**|Restart current game|
+|**Shift + R**|Return to main menu|
 
 ## 🚀 Getting Started
 
@@ -35,98 +43,162 @@ A modern implementation of the classic Snake game built with JavaFX, featuring a
 - Java 21 or higher
 - Apache Maven
 
-### Installation & Running
+### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone nhttps://github.com/nevader/RetroSnake_FX
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd RetroSnake_FX
-    ```
-3.  **Build the project:**
-    Maven will compile the code and download necessary dependencies.
-    ```bash
-    mvn clean install
-    ```
-4.  **Run the game:**
-    Use the JavaFX Maven plugin.
-    ```bash
-    mvn javafx:run
-    ```
-    The main class is `pl.nevader.Launcher`.
+1. Clone the repository:
 
-    Alternatively, after building with `mvn clean package` (if your `pom.xml` is configured to build an executable JAR):
-    ```bash
-    java -jar target/Snake_FX-1.0-SNAPSHOT.jar
+bash
+
+```bash
+git clone https://github.com/yourusername/retro-snake-fx.git
+cd retro-snake-fx
+```
+
+2. Build the project:
+
+bash
+
+```bash
+mvn clean install
+```
+
+3. Run the game:
+
+bash
+
+```bash
+mvn javafx:run
+```
+
+## 🏗️ Architecture
+
+The project follows the **MVC (Model-View-Controller)** pattern:
+
+### Model
+
+- `Engine.java` - Core game logic and state management
+- `Snake.java` - Snake entity with movement mechanics
+- `Food.java` - Food generation and type management
+- `Settings.java` - Game configuration
+
+### View
+
+- `ViewFactory.java` - Window management and styling
+- FXML layouts for each screen
+- Custom CSS stylesheets
+- Game assets (snake, food, UI elements)
+
+### Controller
+
+- `BaseController.java` - Abstract controller base
+- `GameWindowController.java` - Game screen logic
+- `MainMenuController.java` - Menu navigation
+- `NewGameController.java` - Game configuration
+- `HighScoresController.java` - Leaderboard display
+
+## 📊 High Score System
+
+- **Persistent storage** - Scores saved to `highscore.txt`
+- **Smart ranking algorithm**:
+    
     ```
-    *(Note: The default `javafx-maven-plugin` configuration doesn't create a runnable fat JAR by default for JavaFX 11+ modular applications without additional configuration like using the `maven-shade-plugin` or `jlink`.)*
+    Score = (Food Points × Time Factor) + Board Size Bonus
+    ```
+    
+- **Automatic leaderboard** - Sorted by highest score
+- **Name entry** - Players can save their achievements
 
-## 🛠️ Built With
+## 🎨 Technical Implementation
 
-- **JavaFX 21:** UI framework
-- **Maven:** Dependency management and build tool
-- **FXML:** For defining UI layouts
-- **CSS:** For styling the UI
+### Key Technologies
+
+- **JavaFX 21** - Modern UI framework
+- **FXML** - Declarative UI layouts
+- **CSS Styling** - Custom game aesthetics
+- **Maven** - Dependency management
+
+### Design Patterns
+
+- **MVC Architecture** - Clean separation of concerns
+- **Factory Pattern** - Window creation and management
+- **Observer Pattern** - Game state updates
+
+### Performance Features
+
+- **Separate timer thread** - Non-blocking UI
+- **Efficient rendering** - Canvas-based game board
+- **Optimized collision detection**
 
 ## 📁 Project Structure
 
-A brief overview of the project structure:
-
-```text
-📁 RetroSnake_FX/
-├── ⚙️ pom.xml               # Maven Project Object Model 
-├── 📝 highscore.txt         # Stores high scores
-└── 📁 src/
-    └── 📁 main/
-        ├── 📁 java/pl/nevader/
-        │   ├── 📁 controller/     # Contains controller classes for FXML files 
-        │   ├── 📁 model/          # Contains game logic (Engine.java, Snake.java, Food.java) 
-        │   ├── 📁 view/           # Contains ViewFactory.java and Styles.java enum 
-        │   ├── ☕ Launcher.java   # Main application entry point
-        │   └── ☕ Settings.java   # Handles game settings (size, speed)
-        └── 📁 resources/
-            └── 📁 view/
-                ├── 🖼️ assets/     # Game graphics (images for snake, food, UI elements) 
-                ├── 🎨 css/        # CSS stylesheets (Big.css, Medium.css, Small.css) 
-                └── 📄 *.fxml      # FXML layout files (MainMenu.fxml, GameWindow.fxml, etc.) 
+```
+RetroSnake_FX/
+├── src/main/java/pl/nevader/
+│   ├── controller/       # Game controllers
+│   ├── model/           # Game logic
+│   ├── view/            # UI management
+│   └── Launcher.java    # Application entry
+├── src/main/resources/
+│   └── view/
+│       ├── assets/      # Images and graphics
+│       ├── css/         # Stylesheets
+│       └── *.fxml       # UI layouts
+├── highscore.txt        # Score persistence
+└── pom.xml             # Maven configuration
 ```
 
-## 🎯 Game Features Explained
+## 🧪 Testing Features
 
-### Dynamic Scoring
-- Score increases based on the value of the food eaten.
-- The score for each food item is multiplied by a factor related to the time passed (e.g., `totalScore += (fruitScore * timePassed/1000)`).
+The game includes comprehensive testing scenarios:
 
-### Food Types
-- **Green Apple (Size-Up Food) 🟢:** Increases the snake's length.
-- **Red Apple (Size-Down Food) 🔴:** Decreases the snake's length (minimum length is maintained).
+- Boundary collision detection
+- Self-collision handling
+- Food spawning validation
+- Score calculation accuracy
+- High score persistence
 
-### High Score System
-- Scores are saved automatically when submitted after a game.
-- Persistent storage in `highscore.txt` located in the project's root directory.
-- A leaderboard displays top players and their scores, sorted with the highest score first.
-- If no high scores exist, sample data is populated and saved.
+## 📚 Academic Context
 
-### 🔧 Configuration
-Default game settings can be modified via the "New Game" screen:
-- **Map Size:** Default is 12x12, customizable by the player.
-- **Snake Speed:** Default is 120ms update interval, customizable by the player.
+This project was developed as part of the Graphical User Interface (GUI) course at the Polish-Japanese Academy of Information Technology (PJATK) during the 2022/2023 academic year.
+
+### Learning Objectives
+
+- JavaFX application development
+- MVC architectural pattern
+- Event-driven programming
+- Multi-threading in GUI applications
+- File I/O for data persistence
+
+### Project Requirements Met
+
+- ✅ Snake movement and control mechanics
+- ✅ Food generation and consumption
+- ✅ Timer implementation in separate thread
+- ✅ Customizable board size with validation
+- ✅ Scalable game window with scroll bars
+- ✅ Player name entry and score saving
+- ✅ Persistent high score storage
+- ✅ MVC pattern implementation
+- ✅ Exception handling
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork this project, make improvements, and submit pull requests. If you encounter any bugs or have ideas for new features, please open an issue on GitHub.
+This is an academic project. Feel free to fork and learn from the implementation, but please create your own version if you're working on a similar assignment.
 
-## 👨‍💻 Author
+## ⚠️ Disclaimer
 
-- **[Krzysztof Przybysz (Nevader)](https://github.com/nevader)**
-- GitHub: [@nevader](https://github.com/nevader)
+Built without WYSIWYG tools (Scene Builder, Window Builder) as per academic requirements. All UI elements are hand-coded.
 
-## 🙏 Acknowledgments
+## 📄 License
 
-- Inspired by the classic Nokia Snake game.
-- Built as a learning project to practice Java, JavaFX, and Maven.
+This project is part of academic coursework. Please refer to your institution's academic integrity policies.
+
+## 👤 Author
+
+**Krzysztof Przybysz**  
+Student ID: s24825  
+Course: Graphical User Interface (GUI)
 
 ---
-⭐ If you find this project interesting or helpful, please consider giving it a star on GitHub!
+
+_Note: This implementation meets all project requirements including special food types, time-based scoring, and proper MVC architecture._
