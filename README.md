@@ -47,8 +47,6 @@ A modern implementation of the classic Snake game built with JavaFX, featuring c
 
 1. Clone the repository:
 
-bash
-
 ```bash
 git clone https://github.com/yourusername/retro-snake-fx.git
 cd retro-snake-fx
@@ -56,15 +54,11 @@ cd retro-snake-fx
 
 2. Build the project:
 
-bash
-
 ```bash
 mvn clean install
 ```
 
 3. Run the game:
-
-bash
 
 ```bash
 mvn javafx:run
@@ -181,24 +175,8 @@ This project was developed as part of the Graphical User Interface (GUI) course 
 - ✅ MVC pattern implementation
 - ✅ Exception handling
 
-## 🤝 Contributing
-
-This is an academic project. Feel free to fork and learn from the implementation, but please create your own version if you're working on a similar assignment.
-
-## ⚠️ Disclaimer
-
-Built without WYSIWYG tools (Scene Builder, Window Builder) as per academic requirements. All UI elements are hand-coded.
-
-## 📄 License
-
-This project is part of academic coursework. Please refer to your institution's academic integrity policies.
-
 ## 👤 Author
 
 **Krzysztof Przybysz**  
 Student ID: s24825  
 Course: Graphical User Interface (GUI)
-
----
-
-_Note: This implementation meets all project requirements including special food types, time-based scoring, and proper MVC architecture._
